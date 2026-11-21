@@ -1,6 +1,6 @@
 # Hybrid Video Recommendations on VK-LSVD
 
-An offline ranking experiment by Bogdan Pravdukhin. It compares collaborative filtering with video content embeddings and measures the trade-off between ranking quality and catalog coverage.
+An offline ranking experiment by Bogdan Pravdukhin for VK internship. It compares collaborative filtering with video content embeddings and measures the trade-off between ranking quality and catalog coverage.
 
 ## Results
 
