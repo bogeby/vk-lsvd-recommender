@@ -1,0 +1,11 @@
+jupyterlab
+numpy
+pandas
+polars
+pyarrow
+scipy
+scikit-learn
+matplotlib
+tqdm
+huggingface_hub
+implicit>=0.6
