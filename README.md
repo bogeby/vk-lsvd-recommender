@@ -15,9 +15,9 @@ An offline ranking experiment by Bogdan Pravdukhin. It compares collaborative fi
 
 ALS led on NDCG@20 and returned at least one relevant video for 19.08% of evaluated users. Adding ContentKNN with a 25% weight increased coverage from 3.56% to 22.66%, with a 7.6% relative drop in NDCG@20. ContentKNN-8 reached the most distinct videos and had the highest rare-item recall@20, which was still low in absolute terms.
 
-See the [full results for all 13 configurations](results/final_metrics.csv) and the [executed notebook](vk_lsvd_recommender.ipynb).
+See the [full results for all 13 configurations](final_metrics.csv) and the [executed notebook](vk_lsvd_recommender.ipynb).
 
-![Horizontal bar chart comparing all models by NDCG at 20](results/model_comparison_ndcg20.png)
+![Horizontal bar chart comparing all models by NDCG at 20](model_comparison_ndcg20.png)
 
 ## Experiment
 
@@ -26,7 +26,7 @@ See the [full results for all 13 configurations](results/final_metrics.csv) and 
 - Compared weighted Popularity, cosine ItemKNN, implicit ALS, cosine ContentKNN, and rank-based hybrids. The hybrids combine reciprocal ranks from both models using three different weights.
 - Compared the first 8, 16, 32, and 64 coordinates of one supplied embedding. These settings test truncation of the same representation.
 - Defined rare videos as those with at most five training interactions. Videos absent from training were outside the evaluation catalog. Coverage counts distinct recommended videos across users as a share of that catalog.
-- Repeated evaluation for four models on three 400-user samples to check sensitivity to the choice of evaluation users. This check uses the same trained models. See the [stability summary](results/stability_summary.csv).
+- Repeated evaluation for four models on three 400-user samples to check sensitivity to the choice of evaluation users. This check uses the same trained models. See the [stability summary](stability_summary.csv).
 
 ## Run locally
 
